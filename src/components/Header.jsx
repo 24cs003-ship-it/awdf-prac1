@@ -1,12 +1,16 @@
 // Header component: Displays the portfolio title, student name, and specialization
-function Header({ name, title = "Student Portfolio" }) {
+function Header({ 
+  name = "Prince Akbari", 
+  title = "Student Developer Portfolio",
+  badge = "AWDF Lab • Practical 2" 
+}) {
   return (
     <header className="portfolio-header">
       <div className="header-top-row">
         <span className="live-pill">
-          <span className="live-dot"></span> Active Portfolio • React + Vite
+          <span className="live-dot"></span> React Router & useState
         </span>
-        <div className="header-badge">AWDF Lab • Practical 1</div>
+        <div className="header-badge">{badge}</div>
       </div>
 
       <h1 className="header-title">
